@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестовое задание Skillbox</title>
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="main-header">Стоимость обучения</h1>
+        <div class="main-container">
+            <section class="main-container__discount discount">
+                <div class="discount__label label">
+                    <span class="label__name">скидка</span>
+                    <span class="label__value">40%</span>
+                    <span class="label__count">первым 20</span>
+                </div>
+                <div class="discount__item">
+                    <span class="discount__head discount__head_full">Полная стоимость курса</span>
+                    <span class="discount__price discount__price_full"><del>50 000 &#8381;</del></span>
+                </div>
+                <div class="discount__item">
+                    <span class="discount__price discount__price_defer">2 900 &#8381;</span>
+                    <span class="discount__head discount__head_defer">Рассрочка без первого взноса</span>
+                </div>
+                <div class="discount__item">
+                    <span class="discount__price discount__price_first">29 000 &#8381;</span>
+                    <span class="discount__head discount__head_first">Первым 20-ти</span>
+                </div>
+            </section>
+            <section class="main-container__form form">
+                <h2 class="form__header">Запишитесь на курс</h2>
+                <ul class="form__list">
+                    <li class="form__list-item">Телефон</li>
+                    <li class="form__list-item">Телефон</li>
+                    <li class="form__list-item">Телефон</li>
+                    <li class="form__list-item">Телефон</li>
+                </ul>
+                <div class="form__date-container">
+                    <p class="form__date-text">Старт курса <span class="form__date-number">15 июля</span></p>
+                    <p class="form__date-text">Осталось <span class="form__date-number">12 мест</span></p>
+                </div>
+                <form class="form__inputs">
+                    <input class="form__text-input form__text-input_name" type="text" placeholder="Имя">
+                    <input class="form__text-input form__text-input_tel" type="tel" placeholder="Телефон">
+                    <input class="form__text-input form__text-input_email" type="email" placeholder="E-mail">
+                    <div class="form__personal-data-container">
+                        <input id="data-checkbox" class="form__personal-data-checkbox" type="checkbox">
+                        <label class="form__personal-data-custom-checkbox" for="data-checkbox"></label>
+                        <label class="form__personal-data-label" for="data-checkbox">Я согласен с условиями обработки
+                            <a class="form__personal-data-link" href="#">персональных данных</a></label>
+                    </div>
+                    <button class="form__submit-button">Записаться</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
